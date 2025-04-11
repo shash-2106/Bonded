@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <title>Create Event | Host</title>
-  <link rel="stylesheet" href="styles/styles5.css">
+  <link rel="stylesheet" href="css/styles.css">
   <script type="module" src="host.js" defer></script>
 </head>
 <body>
-  <h2 style="text-align:center;">Create Your Event</h2>
+  <h2>Create Your Event</h2>
 
   <form id="hostForm">
     <input type="text" id="eventName" placeholder="Event Name" required />
@@ -41,8 +41,8 @@
         <label><input type="checkbox" name="deliverables" value="Exclusive Interview"> Exclusive Interview</label><br>
         <label><input type="checkbox" name="deliverables" value="Event Tickets"> Event Tickets</label><br>
     </div>
-<input type="numeric" id="no. of people" placeholder="number of people" required>
-<input type="text" id="time" placeholder="Time range"/>
+<label><input type="numeric" id="no. of people" placeholder="number of people" required></label>
+<label><input type="number" id="fee" placeholder="Entry Fee per Person (Rs)" required></label>
 
     <button type="submit">Submit</button>
   </form>
