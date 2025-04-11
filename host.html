@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Create Event | Host</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <!--script type="module" src="js/host.js" defer></!--script-->
+</head>
+<body>
+  <h2>Create Your Event</h2>
+
+  <form id="hostForm">
+    <input type="text" id="eventName" placeholder="Event Name" required />
+    <input type="text" id="venue" placeholder="Venue" required />
+    <input type="text" id="social" placeholder="Social Media Link"/>
+    <input type="text" id="experience" placeholder="Experience" required />
+    <input type="text" id="organization" placeholder="Organization/Institution" required />
+    <textarea id="description" placeholder="2-line Description" maxlength="200" required></textarea>
+<h4>Select Event Tags</h4>
+<label><input type="checkbox" value="tech" /> Tech</label>
+<label><input type="checkbox" value="art" /> Art</label>
+<label><input type="checkbox" value="music" /> Music</label>
+<label><input type="checkbox" value="literature" /> Literature</label>
+<label><input type="checkbox" value="gaming" /> Gaming</label>
+<label><input type="checkbox" value="others" /> Others</label>
+<textarea id="otherTags" placeholder="Other Tags" maxlength="50"></textarea>
+    
+
+<h4>For sponsor</h4>
+<label><input type="numeric" value="expecting amount"/>Expecting amount (Rs)</label>
+
+<input type="checkbox" value="Deliverables"></input>
+
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <p id="message"></p>
+</body>
+</html>
