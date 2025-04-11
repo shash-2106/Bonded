@@ -12,12 +12,12 @@ const loginBtn = document.getElementById('loginBtn');
 const message = document.getElementById('message');
 
 // SIGN UP
-loginBtn.addEventListener('click', async (e) => {
-  e.preventDefault(); // Add this!
+signupBtn.addEventListener('click', async (e) => {
+  e.preventDefault();
   try {
-    await signInWithEmailAndPassword(auth, emailInput.value, passwordInput.value);
-    message.textContent = "Login successful!";
-    window.location.href = "/bonded/role.html";
+    await createUserWithEmailAndPassword(auth, emailInput.value, passwordInput.value);
+    message.textContent = "Sign-up successful!";
+    window.location.href = "role.html"; // ➡ Redirect to Page 2
   } catch (error) {
     message.textContent = error.message;
   }
@@ -30,7 +30,7 @@ loginBtn.addEventListener('click', async () => {
   try {
     await signInWithEmailAndPassword(auth, emailInput.value, passwordInput.value);
     message.textContent = "Login successful!";
-    window.location.href = "/bonded/role.html"; // ➡ Redirect to Page 2
+    window.location.href = "role.html"; // ➡ Redirect to Page 2
   } catch (error) {
     message.textContent = error.message;
   }
