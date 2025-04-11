@@ -1,4 +1,4 @@
-`import { db, auth } from './firebase.js';
+import { db, auth } from './firebase.js';
 import {
   collection,
   getDocs,
@@ -63,4 +63,3 @@ auth.onAuthStateChanged(async (user) => {
   });
 });
 
-`
