@@ -1,6 +1,8 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
+import { getDatabase, ref, push, onValue, set, update, remove } from "firebase/database"; //Realtime database
+import { getFirestore, collection, addDoc, onSnapshot, doc, updateDoc, deleteDoc } from "firebase/firestore"; //Firestore database
+
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -13,9 +15,12 @@ const firebaseConfig = {
   storageBucket: "bonded-7dc5f.firebasestorage.app",
   messagingSenderId: "625990838894",
   appId: "1:625990838894:web:26a4a37946771f824f947f",
-  measurementId: "G-G5C06PVF2X"
+  measurementId: "G-G5C06PVF2X",
+  databaseURL:"https://console.firebase.google.com/u/0/project/bonded-7dc5f/database/bonded-7dc5f-default-rtdb/data/~2F"
 };
 
-// Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+
+const database = getDatabase(app);
+
+const db = getFirestore(app);
