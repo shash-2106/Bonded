@@ -15,6 +15,7 @@ onAuthStateChanged(auth, (user) => {
       const userData = {
         userId: user.uid,
         name: document.getElementById('name').value,
+        age: document.getElementById('age'),
         locality: document.getElementById('locality').value,
         interests: selectedTags,
         createdAt: serverTimestamp()
