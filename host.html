@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Create Event | Host</title>
-  <link rel="stylesheet" href="stylesFolder/styles.css">
+  <link rel="stylesheet" href="stylesFolder/styles5.css">
   <script type="module" src="host.js" defer></script>
 </head>
 <body>
@@ -17,30 +17,31 @@
     <input type="text" id="organization" placeholder="Organization/Institution" required />
     <textarea id="description" placeholder="2-line Description" maxlength="200" required></textarea>
 <h4>Select Event Tags</h4>
-<label><input type="checkbox" value="tech" /> Tech</label>
-<label><input type="checkbox" value="art" /> Art</label>
-<label><input type="checkbox" value="music" /> Music</label>
-<label><input type="checkbox" value="literature" /> Literature</label>
-<label><input type="checkbox" value="gaming" /> Gaming</label>
-<label><input type="checkbox" value="others" /> Others</label>
-<textarea id="otherTags" placeholder="Other Tags" maxlength="50"></textarea>
-    
+<div id="tag-options">
+    <label><input type="checkbox" value="tech" /> Tech</label>
+<label><input class="tag" type="checkbox" value="art" /> Art</label>
+<label><input class="tag" type="checkbox" value="music" /> Music</label>
+<label><input class="tag" type="checkbox" value="literature" /> Literature</label>
+<label><input class="tag" type="checkbox" value="gaming" /> Gaming</label>
+<label><input class="tag" type="checkbox" value="others" /> Others</label>
+<textarea rows="10" cols="10"></textarea>
+</div>
 
 <h4>For sponsor</h4>
 <label><input type="numeric" value="expecting amount"/>Expecting amount (Rs)</label>
+<div id="deliverables" class="deliver"></div>
+    <label><input type="checkbox" name="deliverables" value="Logo Placement"> Logo Placement</label><br>
+    <label><input type="checkbox" name="deliverables" value="Social Media Shoutout"> Social Media Shoutout</label><br>
+    <label><input type="checkbox" name="deliverables" value="Event Booth"> Event Booth</label><br>
+    <label><input type="checkbox" name="deliverables" value="Website Feature"> Website Feature</label><br>
+    <label><input type="checkbox" name="deliverables" value="Newsletter Mention"> Newsletter Mention</label><br>
+    <label><input type="checkbox" name="deliverables" value="Product Placement"> Product Placement</label><br>
+    <label><input type="checkbox" name="deliverables" value="VIP Access"> VIP Access</label><br>
+    <label><input type="checkbox" name="deliverables" value="Custom Branding"> Custom Branding</label><br>
+    <label><input type="checkbox" name="deliverables" value="Exclusive Interview"> Exclusive Interview</label><br>
+    <label><input type="checkbox" name="deliverables" value="Event Tickets"> Event Tickets</label><br>
+</div>
 
-<div id="deliverables"></div>
-        <label><input type="checkbox" name="deliverables" value="Logo Placement"> Logo Placement</label><br>
-        <label><input type="checkbox" name="deliverables" value="Social Media Shoutout"> Social Media Shoutout</label><br>
-        <label><input type="checkbox" name="deliverables" value="Event Booth"> Event Booth</label><br>
-        <label><input type="checkbox" name="deliverables" value="Website Feature"> Website Feature</label><br>
-        <label><input type="checkbox" name="deliverables" value="Newsletter Mention"> Newsletter Mention</label><br>
-        <label><input type="checkbox" name="deliverables" value="Product Placement"> Product Placement</label><br>
-        <label><input type="checkbox" name="deliverables" value="VIP Access"> VIP Access</label><br>
-        <label><input type="checkbox" name="deliverables" value="Custom Branding"> Custom Branding</label><br>
-        <label><input type="checkbox" name="deliverables" value="Exclusive Interview"> Exclusive Interview</label><br>
-        <label><input type="checkbox" name="deliverables" value="Event Tickets"> Event Tickets</label><br>
-    </div>
 <label><input type="numeric" id="no. of people" placeholder="number of people" required></label>
 <label><input type="number" id="fee" placeholder="Entry Fee per Person (Rs)" required></label>
 

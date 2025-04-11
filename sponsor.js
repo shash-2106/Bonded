@@ -10,12 +10,18 @@ onAuthStateChanged(auth, (user) => {
     form.addEventListener('submit', async (e) => {
       e.preventDefault();
 
+      const deliverables = [];
+      document.querySelectorAll('input.deliver:checked').forEach((cb) => {
+        deliverables.push(cb.value);
+    });
+
       const sponsorData = {
         userId: user.uid,
         name: document.getElementById('name').value,
         photo: document.getElementById('photo').value,
         description: document.getElementById('description').value,
         amount: document.getElementById('amount').value,
+        deliverables: deliverables,
         createdAt: serverTimestamp()
       };
 
