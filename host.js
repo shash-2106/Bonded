@@ -26,6 +26,7 @@ onAuthStateChanged(auth, (user) => {
         venue: document.getElementById('venue').value,
         organization: document.getElementById('organization').value,
         description: document.getElementById('description').value,
+        amount: document.getElementById('amount').value,
         tags: selectedTags,
         deliverables: deliverables,
         createdAt: serverTimestamp()
