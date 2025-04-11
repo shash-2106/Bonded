@@ -16,14 +16,13 @@ onAuthStateChanged(auth, (user) => {
         photo: document.getElementById('photo').value,
         description: document.getElementById('description').value,
         amount: document.getElementById('amount').value,
-        conditions: document.getElementById('conditions').value,
         createdAt: serverTimestamp()
       };
 
       try {
         await addDoc(collection(db, 'sponsors'), sponsorData);
         message.textContent = "Profile saved!";
-        window.location.href = 'sponsor-matches.html'; // ➡ Redirect to match page
+        window.location.href = 'match-sponsor.html'; // ➡ Redirect to match page
       } catch (err) {
         message.textContent = "Error: " + err.message;
       }
