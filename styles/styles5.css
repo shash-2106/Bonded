@@ -1,0 +1,108 @@
+/* bonded/css/styles.css */
+
+/* Reset some default spacing */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Body layout */
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #74ebd5, #acb6e5);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+  }
+  
+  /* Title centered above the form */
+  h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+  }
+  
+  /* Form container */
+  form {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  /* Inputs and Textareas */
+  input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0 20px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    background-color: #fdfdfd;
+  }
+  
+  /* Placeholder styling */
+  input::placeholder {
+    color: #aaa;
+  }
+  
+  /* Checkbox section */
+  h4 {
+    margin-top: 10px;
+    margin-bottom: 8px;
+    font-size: 18px;
+    color: #444;
+  }
+  
+  label {
+    display: block;
+    margin: 6px 0;
+    font-size: 15px;
+    color: #555;
+  }
+  
+  input[type="checkbox"] {
+    margin-right: 8px;
+  }
+  
+  /* Submit button */
+  button[type="submit"] {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Message below the form */
+  #message {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #d9534f;
+    text-align: center;
+  }
+  
+  /* Responsive */
+  @media (max-width: 600px) {
+    form {
+      padding: 20px;
+      width: 90%;
+    }
+  }
+  
