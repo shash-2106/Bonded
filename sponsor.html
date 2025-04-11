@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Become a Sponsor | Bonded</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script type="module" src="js/sponsor.js" defer></script>
+</head>
+<body>
+  <h2>Sponsor Profile</h2>
+
+  <form id="sponsorForm">
+    <input type="text" id="name" placeholder="Your Name" required />
+    <input type="url" id="photo" placeholder="Picture URL" required />
+    <textarea id="experience" placeholder="Describe your previous experience in sponsoring events" maxlength="500" required></textarea>
+    <textarea id="description" placeholder="2-line Description" maxlength="200" required></textarea>
+    <input type="number" id="amount" placeholder="Amount to Sponsor (₹)" required />
+    <div id="deliverables"></div>
+        <label><input type="checkbox" name="deliverables" value="Logo Placement"> Logo Placement</label><br>
+        <label><input type="checkbox" name="deliverables" value="Social Media Shoutout"> Social Media Shoutout</label><br>
+        <label><input type="checkbox" name="deliverables" value="Event Booth"> Event Booth</label><br>
+        <label><input type="checkbox" name="deliverables" value="Website Feature"> Website Feature</label><br>
+        <label><input type="checkbox" name="deliverables" value="Newsletter Mention"> Newsletter Mention</label><br>
+        <label><input type="checkbox" name="deliverables" value="Product Placement"> Product Placement</label><br>
+        <label><input type="checkbox" name="deliverables" value="VIP Access"> VIP Access</label><br>
+        <label><input type="checkbox" name="deliverables" value="Custom Branding"> Custom Branding</label><br>
+        <label><input type="checkbox" name="deliverables" value="Exclusive Interview"> Exclusive Interview</label><br>
+        <label><input type="checkbox" name="deliverables" value="Event Tickets"> Event Tickets</label><br>
+    </div>
+    <div id="genres"></div>
+        <h3>Genres you are willing to sponsor:</h3>
+        <label><input type="checkbox" name="genres" value="Tech"> Tech</label><br>
+        <label><input type="checkbox" name="genres" value="Art"> Art</label><br>
+        <label><input type="checkbox" name="genres" value="Music"> Music</label><br>
+        <label><input type="checkbox" name="genres" value="Literature"> Literature</label><br>
+        <label><input type="checkbox" name="genres" value="Gaming"> Gaming</label><br>
+        <label><input type="checkbox" name="genres" value="Others"> Others</label><br>
+    </div>
+    
+    <button type="submit">Submit</button>
+  </form>
+
+  <p id="message"></p>
+</body>
+</html>
