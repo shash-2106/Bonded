@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User Profile | Bonded</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script type="module" src="js/user.js" defer></script>
+</head>
+<body>
+  <h2>Set Up Your Profile</h2>
+
+  <form id="userForm">
+    <input type="text" id="name" placeholder="Your Name" required />
+    <input type="text" id="locality" placeholder="Your Locality" required />
+
+    <h4>Select Your Interests</h4>
+    <label><input type="checkbox" value="tech" /> Tech</label>
+    <label><input type="checkbox" value="art" /> Art</label>
+    <label><input type="checkbox" value="music" /> Music</label>
+    <label><input type="checkbox" value="literature" /> Literature</label>
+    <label><input type="checkbox" value="gaming" /> Gaming</label>
+    
+    <button type="submit">Submit</button>
+  </form>
+
+  <p id="message"></p>
+</body>
+</html>
