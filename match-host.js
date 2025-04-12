@@ -16,9 +16,12 @@ auth.onAuthStateChanged(async (user) => {
   if (!user) return;
 
   try {
-    const sponsorsSnapshot = await getDocs(collection(db, 'sponsors'));
-
-    sponsorsSnapshot.forEach((docSnap) => {
+    
+    const hostDoc = await getDocs(query(collection(db, 'hosts'), where('uid', '==', user.uid)));
+    if (hostDoc.empty) return;
+    const hostData = hostDoc.docs[0].data();
+    const filteredSponsorsSnapshot = await getDocs(query(collection(db, 'sponsors'), where('amount', '==', hostData.amount)));
+    filteredSponsorsSnapshot.forEach((docSnap) => {
       const sponsor = docSnap.data();
 
       const card = document.createElement('div');

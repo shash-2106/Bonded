@@ -4,7 +4,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Tahoma', sans-serif;
   }
   
   body {
@@ -57,8 +57,8 @@
   }
   
   #signupBtn {
-    background-color: #5b9bd5;
-    color: white;
+    background-color: #acb6e5;
+    color: black;
   }
   
   #signupBtn:hover {
